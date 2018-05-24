@@ -1,0 +1,7 @@
+>database to save user settings --done
+>delete reserved places
+>user_logout_script 
+>
+>design
+>
+>remodify_location of files
