@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width">
 
 		<title>Jaust a testing</title>
-		<link rel="stylesheet" href="main.css?<?php echo time(); ?>">
+		<link rel="stylesheet" href="css/main.css?<?php echo time(); ?>">
 	</head>
 
 	<body>
@@ -110,6 +110,7 @@
 
 															if($result)
 															{
+
 																if (mysqli_num_rows($result)> 0)
 																{
 																	// output data of each row

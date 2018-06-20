@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width">
 
 		<title>Jaust a testing</title>
-		<link rel="stylesheet" href="user.css?<?php echo time(); ?>">
+		<link rel="stylesheet" href="../css/user.css?<?php echo time(); ?>">
 	</head>
 
 	<body>
@@ -28,7 +28,7 @@
 								<div class="dropdown-content">
 									<a href="login.php">login</a>
 									<a href="user.php">signup</a>
-									
+									<a href="#">menu3</a>
 						</li>
 
 						<li class="dropdown">
@@ -57,7 +57,7 @@
 
 				</div>
 				<div class="plac_">
-					<img src="lucknow.png">
+					<img src="../img/lucknow.png">
 				</div>
 				<div class="write">
 					The ‘Muskuraaiye Aap Lucknow Mein Hai’ Welcome Sign says it all, it is basically a prediction than a

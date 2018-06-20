@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width">
 
 		<title>Jaust a testing</title>
-		<link rel="stylesheet" href="user.css?<?php echo time(); ?>">
+		<link rel="stylesheet" href="css/user.css?<?php echo time(); ?>">
 	</head>
 
 	<body>
@@ -28,7 +28,7 @@
 								<div class="dropdown-content">
 									<a href="login.php">login</a>
 									<a href="user.php">signup</a>
-
+									<a href="#">menu3</a>
 						</li>
 
 						<li class="dropdown">
@@ -37,7 +37,7 @@
 									<a href="plane.php">plane</a>
 
 									<a href="train.php">train</a>
-									
+									<a href="bus.php">bus</a>
 
 						</li>
 

@@ -8,7 +8,7 @@
 		<meta name="google-signin-client_id" content="490214144268-jrkif5k47q7i71kk7roomqb3cd40efgl.apps.googleusercontent.com">
 
 		<title>Jaust a testing</title>
-		<link rel="stylesheet" href="main.css?<?php echo time(); ?>">
+		<link rel="stylesheet" href="css/main.css?<?php echo time(); ?>">
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
 	</head>
 
@@ -30,9 +30,9 @@
 						<li class="dropdown">
 								<a href="#" class="dropbtn">user</a>
 								<div class="dropdown-content">
-									<a href="user_login.php">login</a>
+									<a href="login.php">login</a>
 									<a href="user.php">signup</a>
-
+									<a href="#">menu3</a>
 						</li>
 
 
@@ -42,7 +42,7 @@
 									<a href="plane.php">plane</a>
 
 									<a href="train.php">train</a>
-									
+									<a href="bus.php">bus</a>
 
 						</li>
 
@@ -57,119 +57,130 @@
 
 
 		<section>
-			<div class="container">
-				<div class="slider"id="login">
-					<h1>Out of curiosity</h1>
+			<!-- <div class="container"> -->
+				   <div class="slider"id="login">
+							<h1>Out of curiosity</h1>
 
-						<div class="login">
-							<form action="user_DB.php" method="post">
-								<input type="text" name="name" placeholder="Name">
-								<input type="password" name="pass" placeholder="Password">
-								<input type="submit" name="signup" value="sign up">
-								<input type="submit" name="signin" value="sign in">
-							</form>
-					</div>
+										<div class="login">
+											<form action="user_DB.php" method="post">
+												<input type="text" name="name" placeholder="Name">
+												<input type="password" name="pass" placeholder="Password">
+												<input type="submit" name="signup" value="sign up">
+												<input type="submit" name="signin" value="sign in">
+											</form>
+										</div>
 
-					<div class="ads">
-							<!-- <a href="http://www.google.com"><img src="login-google.png"></a> -->
-							<div class="g-signin2" data-onsuccess="onSignIn" data-width="300" data-height="45" data-padding-bottom="10"></div>
-							<!-- <a href="http://www.google.com"><img src="login-facebook.png"></a> -->
-							<br>
-							<a href="tlogin.php"><img src="sign_tw.png"></a>
-					</div>
+										<div class="ads">
+													<!-- <a href="http://www.google.com"><img src="login-google.png"></a> -->
+													<div id="fb"><a   href="http://www.google.com"><img  src="img/login-facebook.png"></a></div>
+													<div class="g-signin2" data-onsuccess="onSignIn" data-width="300" data-height="45" data-padding-bottom="10">
 
-				</div>
-				<script>
-				function onSignIn(googleUser) {
-											var profile = googleUser.getBasicProfile();
-											// alert('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-											// console.log('Name: ' + profile.getName());
-											//console.log('Image URL: ' + profile.getImageUrl());
-											//console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+													</div><br>
 
-											window.open("goog.php?name="+profile.getName(),"_self");
-											}
-				</script>
+													<div id="tw"><a  href="tlogin.php" ><img src="img/sign_tw.png"></a></div>
+										</div>
 
-				<!-- <form action="user_db.php" method="get">
-					<input type="text" value="<?php
-											if(!isset($_SESSION['name']))
-												$_SESSION['name']="";
-											else
-												echo $_SESSION['name'];?>">
-					</form> -->
-				</div>
+							</div>
+							<script>
+							function onSignIn(googleUser)
+													{
+														var profile = googleUser.getBasicProfile();
+														// alert('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+														// console.log('Name: ' + profile.getName());
+														//console.log('Image URL: ' + profile.getImageUrl());
+														//console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+
+														window.open("goog.php?name="+profile.getName(),"_self");
+													}
+							</script>
+
+				<!-- </div> -->
 		</section>
 
-		<div class="container">
-		 <section class="x">
+		<!-- <div class="container"> -->
+		<section class="x">
 
-			 <div class="places">
-
-
-					 <div class="box">
-						 <div class="tt">
-						 <a href="1.php"><img src="Hyderabad-768x454.jpg"></a>
-						 <p>Hyderabad<p>
-						 </div>
-					 </div>
-
-					 <div class="box">
-						 <div class="tt">
-							 <a href="2.php"><img src="Lucknow.jpg"></a>
-							 <p>Lucknow<p>
-						 </div>
-					 </div>
+							<div class="places">
 
 
-					 <div class="box">
-						 <div class="tt">
-							 <a href="3.php"><img src="LSplendour-of-Gujrat.jpg" ></a>
-							 <p>Gujrat<p>
-						 </div>
-					 </div>
+									<div class="box">
+										<div class="tt">
+										<a href="1.php"><img src="img/Hyderabad-768x454.jpg"></a>
+										<p>Hyderabad<p>
+										</div>
+									</div>
+
+									<div class="box">
+										<div class="tt">
+											<a href="2.php"><img src="img/Lucknow.jpg"></a>
+											<p>Lucknow<p>
+										</div>
+									</div>
 
 
-					 <div class="box">
-						 <div class="tt">
-							 <a href="4.php"><img  src="lucknow-1-758x502.jpg"></a>
-							 <p>Ahmedabad<p>
-						 </div>
-					 </div>
-
-					 <div class="box">
-						 <div class="tt">
-							 <a href="5.php"><img src="L132945695.jpg"></a>
-							 <p>Rajasthan<p>
-						 </div>
-					 </div>
+									<div class="box">
+										<div class="tt">
+											<a href="3.php"><img src="img/LSplendour-of-Gujrat.jpg" ></a>
+											<p>Gujrat<p>
+										</div>
+									</div>
 
 
-					 <div class="box">
-						 <div class="tt">
-							 <a href="6.php"><img src="Maitra_Ramban.jpg"></a>
-							 <p>Darjeeling<p>
-						 </div>
-					 </div>
+									<div class="box">
+										<div class="tt">
+											<a href="4.php"><img  src="img/lucknow-1-758x502.jpg"></a>
+											<p>Ahmedabad<p>
+										</div>
+									</div>
 
-					 <div class="box">
-						 <div class="tt">
-						 <a href ="7.php">	<img src="Kashmir.jpg"></a>
-								 <p>Kashmir<p>
-						 </div>
-					 </div>
+									<div class="box">
+										<div class="tt">
+											<a href="5.php"><img src="img/L132945695.jpg"></a>
+											<p>Rajasthan<p>
+										</div>
+									</div>
 
 
-					 <div class="box">
-						 <div class="tt">
-								 <a href="8.php"><img src="sikkim.jpg"></a>
-								 <p>sikkim<p>
-						 </div>
-					 </div>
-				 </div>
+									<div class="box">
+										<div class="tt">
+											<a href="6.php"><img src="img/Maitra_Ramban.jpg"></a>
+											<p>Darjeeling<p>
+										</div>
+									</div>
 
-		</section>
-		</div>
+									<div class="box">
+										<div class="tt">
+										<a href ="7.php">	<img src="img/Kashmir.jpg"></a>
+												<p>Kashmir<p>
+										</div>
+									</div>
+
+
+									<div class="box">
+										<div class="tt">
+												<a href="8.php"><img src="img/sikkim.jpg"></a>
+												<p>sikkim<p>
+										</div>
+									</div>
+
+
+									<div class="box">
+										<div class="tt">
+												<a href="8.php"><img src="img/sikkim.jpg"></a>
+												<p>sikkim<p>
+										</div>
+									</div>
+
+									<div class="box">
+										<div class="tt">
+												<a href="8.php"><img src="img/sikkim.jpg"></a>
+												<p>sikkim<p>
+										</div>
+									</div>
+								</div>
+
+	</section>
+		<!-- </div> -->
 
 
 		<footer>

@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width">
 
 		<title>Jaust a testing</title>
-		<link rel="stylesheet" href="user.css?<?php echo time(); ?>">
+		<link rel="stylesheet" href="css/user.css?<?php echo time(); ?>">
 	</head>
 
 	<body>
@@ -37,7 +37,7 @@
 									<a href="plane.php">plane</a>
 
 									<a href="train.php">train</a>
-									
+									<a href="bus.php">bus</a>
 
 						</li>
 
@@ -77,24 +77,24 @@
 
 																	</datalist>
 
-																	<input list="class" name="class" placeholder="class">
+																	<!-- <input list="class" name="class" placeholder="class">
 																		<datalist id="class" >
 																				<option value="Economy">
 																				<option value="Busssuiness">
 																				<option value="Premium">
 																				<option value="Premium Economy">
 
-																		</datalist>
-																	<input list="des" name="pass" placeholder="passengers">
+																		</datalist> -->
+																	<!-- <input list="des" name="pass" placeholder="passengers">
 																		<datalist id="des">
 																				<option value="1">
 																				<option value="2">
 																				<option value="3">
 																				<option value="4">
 																				<option value="5">
-																		</datalist>
+																		</datalist> -->
                                   <input type="date" placeholder="date" name="date">
-                                  <input type="submit" name="book2" value="Book" >
+                                  <input type="submit" name="Search" value="Search" >
                             </form>
 
                             <script type="text/javascript">

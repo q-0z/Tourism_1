@@ -28,7 +28,7 @@
 								<div class="dropdown-content">
 									<a href="login.php">login</a>
 									<a href="user.php">signup</a>
-					
+									<a href="#">menu3</a>
 						</li>
 
 						<li class="dropdown">
@@ -53,16 +53,20 @@
 
 			<section class="design">
 				<div class="info">
-				Kashmir
+				Sikkim
 
 				</div>
 				<div class="plac_">
-					<img src="leh.jpg">
+					<img src="dsc_0488bor.jpg">
 				</div>
 				<div class="write">
-					he capital city Srinagar is the prized possession of the Vale of Kashmir. Imbibing many colors of the state, it reflects the authentic Jammu & Kashmir. The city sits quietly on the bank of Jhelum and contemplates the vivaciousness. The canopied Shikara boats, plush houseboats, snow-capped mountains and the sparkling water of Dal and Nageen Lake come together to bring the picture of authentic Srinagar come alive. The blessing of Prophet Mohammad from Hazratbal Shrine and Jama Masjid, the divinity of Shankarcharya temple, glimpse of floating vegetable market and the bountiful flora and fauna, all honour the capital city with a title of Paradise on Earth. Srinagar also renders great options for activities like bird watching (Dachigam Wildlife Sanctuary) water skiing (Dal Lake, Nagin Lake and Bod-dal), golfing (Kashmir Golf Course), trekking (towards Pir Panjal, 89 kms from Srinagar) and boating (Shikara ride on Dal Lake and Nagin Lake) and thus makes holidays in Jammu & Kashmir a successful expedition.
+					“Wonders do come in small packages!”, and if you want to witness this, you must visit the picturesque state of Sikkim. Tucked away in the lap of the magical Himalayas, though it is the second smallest state in the country,
+					 its prismatic beauty and mesmeric charm will make you wonder!
+					The gateway to the North-Eastern corridor of India, Sikkim not only boasts of its enchanting beauty,
+					but also offers an engrossing list of things to do and places to visit as well. If you are planning to visit
+					this charismatic state, here is a list of 15 best places to visit in Sikkim that makes it for a wonderful as well as blissful holiday:
 					<br>
-						<h1>Places to visit:</h1><span>Gulmarg</span><span>Udhampur</span><span>Kargil</span><span>Sonmarg</span><span>Pahalgam</span><span>Doda</span><span>Anantnag</span>
+						<h1>Places to visit:</h1><span>Gangtok</span><span>Yuksom</span><span> Nathula Pass</span><span>Tsomgo Lake</span><span>Pelling</span><span> Lachung</span><span>Ravangla</span><span>Jawaharlal Nehru Botanical Garden</span><span>Yumthang Valley</span><span>Gurudongmar</span>
 					</div>
 
 

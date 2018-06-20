@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width">
 
 		<title>Jaust a testing</title>
-		<link rel="stylesheet" href="main.css?<?php echo time(); ?>" >
+		<link rel="stylesheet" href="css/main.css?<?php echo time(); ?>" >
 
 	</head>
 
@@ -41,7 +41,7 @@
 									<a href="plane.php">plane</a>
 
 									<a href="train.php">train</a>
-									
+									<a href="bus.php">bus</a>
 
 						</li>
 
@@ -56,14 +56,14 @@
 
 
 		<section>
-			<div class="container">
+			<!-- <div class="container"> -->
 				<div class="slider" id ="mainpage">
 
-					<div class="w3-content w3-section" style=>
-								  <img class="mySlides w3-animate-fading" src="Hyderabad-768x454.jpg">
-								  <img class="mySlides w3-animate-fading" src="Lucknow.jpg" >
-								  <img class="mySlides w3-animate-fading" src="LSplendour-of-Gujrat.jpg" >
-								  <img class="mySlides w3-animate-fading" src="lucknow-1-758x502.jpg" >
+					<div class="w3-content w3-section" >
+								  <img class="mySlides w3-animate-fading" src="img/Hyderabad-768x454.jpg">
+								  <img class="mySlides w3-animate-fading" src="img/Lucknow.jpg" >
+								  <img class="mySlides w3-animate-fading" src="img/LSplendour-of-Gujrat.jpg" >
+								  <img class="mySlides w3-animate-fading" src="img/lucknow-1-758x502.jpg" >
 					</div>
 
 				<script>
@@ -87,11 +87,11 @@
 
 
 
-				</div>
+				<!-- </div> -->
 		</section>
 
 
-		<div class="container">
+		<!-- <div class="container"> -->
 		 <section class="x">
 
 								<div class="places">
@@ -99,14 +99,14 @@
 
 										<div class="box">
 											<div class="tt">
-											<a href="1.php"><img src="Hyderabad-768x454.jpg"></a>
+											<a href="info_place/1.php"><img src="img/Hyderabad-768x454.jpg"></a>
 											<p>Hyderabad<p>
 											</div>
 										</div>
 
 										<div class="box">
 											<div class="tt">
-												<a href="2.php"><img src="Lucknow.jpg"></a>
+												<a href="info_place/2.php"><img src="img/Lucknow.jpg"></a>
 												<p>Lucknow<p>
 											</div>
 										</div>
@@ -114,7 +114,7 @@
 
 										<div class="box">
 											<div class="tt">
-												<a href="3.php"><img src="LSplendour-of-Gujrat.jpg" ></a>
+												<a href="info_place/3.php"><img src="img/LSplendour-of-Gujrat.jpg" ></a>
 												<p>Gujrat<p>
 											</div>
 										</div>
@@ -122,14 +122,14 @@
 
 										<div class="box">
 											<div class="tt">
-												<a href="4.php"><img  src="lucknow-1-758x502.jpg"></a>
+												<a href="info_place/4.php"><img  src="img/lucknow-1-758x502.jpg"></a>
 												<p>Ahmedabad<p>
 											</div>
 										</div>
 
 										<div class="box">
 											<div class="tt">
-												<a href="5.php"><img src="L132945695.jpg"></a>
+												<a href="5.php"><img src="img/L132945695.jpg"></a>
 												<p>Rajasthan<p>
 											</div>
 										</div>
@@ -137,14 +137,14 @@
 
 										<div class="box">
 											<div class="tt">
-												<a href="6.php"><img src="Maitra_Ramban.jpg"></a>
+												<a href="6.php"><img src="img/Maitra_Ramban.jpg"></a>
 												<p>Darjeeling<p>
 											</div>
 										</div>
 
 										<div class="box">
 											<div class="tt">
-											<a href ="7.php">	<img src="Kashmir.jpg"></a>
+											<a href ="7.php">	<img src="img/Kashmir.jpg"></a>
 													<p>Kashmir<p>
 											</div>
 										</div>
@@ -152,14 +152,29 @@
 
 										<div class="box">
 											<div class="tt">
-													<a href="8.php"><img src="sikkim.jpg"></a>
+													<a href="8.php"><img src="img/sikkim.jpg"></a>
+													<p>sikkim<p>
+											</div>
+										</div>
+
+
+										<div class="box">
+											<div class="tt">
+													<a href="8.php"><img src="img/sikkim.jpg"></a>
+													<p>sikkim<p>
+											</div>
+										</div>
+
+										<div class="box">
+											<div class="tt">
+													<a href="8.php"><img src="img/sikkim.jpg"></a>
 													<p>sikkim<p>
 											</div>
 										</div>
 									</div>
 
 		</section>
-		</div>
+		<!-- </div> -->
 
 
 

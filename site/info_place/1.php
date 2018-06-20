@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width">
 
 		<title>Jaust a testing</title>
-		<link rel="stylesheet" href="user.css?<?php echo time(); ?>">
+		<link rel="stylesheet" href="../css/user.css?<?php echo time(); ?>">
 	</head>
 
 	<body>
@@ -28,7 +28,7 @@
 								<div class="dropdown-content">
 									<a href="login.php">login</a>
 									<a href="user.php">signup</a>
-									
+									<a href="#">menu3</a>
 						</li>
 
 						<li class="dropdown">
@@ -57,7 +57,7 @@
 
 				</div>
 				<div class="plac_">
-					<img src="Hyderabad-768x454.jpg">
+					<img src="../img/Hyderabad-768x454.jpg">
 				</div>
 				<div class="write">
 					Hyderabad (/ˈhaɪdərəˌbɑːd/ (About this sound listen)
@@ -83,7 +83,12 @@
 					  two states, a transitional arrangement scheduled to end by 2025.
 
 						<br>
-						<h1>Places to visit:</h1><span>Golconda Fort</span><span>Char Minar</span><span>Birla Mandir</span><span>Ramoji Film City</span><span>Nalgonda</span>
+						<h1>Places to visit:</h1>
+							<span><a href="https://en.wikipedia.org/wiki/Golkonda" style="text-decoration: none; color:black;">Golconda Fort</a></span>
+							<span><a href="https://en.wikipedia.org/wiki/Charminar" style="text-decoration: none; color:black;">Char Minar</a></span>
+							<span><a href="https://en.wikipedia.org/wiki/Charminar" style="text-decoration: none; color:black;">Birla Mandir</a></span>
+							<span><a href="https://en.wikipedia.org/wiki/Charminar" style="text-decoration: none; color:black;">Ramoji Film City</a></span>
+							<span><a href="https://en.wikipedia.org/wiki/Charminar" style="text-decoration: none; color:black;">Nalgonda</a></span>
 					</div>
 
 

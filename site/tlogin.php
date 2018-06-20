@@ -50,9 +50,9 @@ if (!isset($_SESSION['access_token'])) {
 												while($row = $result->fetch_assoc())
 												{
 													// echo "id: " . $row["user"]. " - Name: " . $row["pass"]. "<br>";
-													echo $_SESSION['name']=$row["user"];
-													echo $_SESSION['pass']=$row["pass"];
-													 // header("Location: userlogged.php");
+													$_SESSION['name']=$row["user"];
+													$_SESSION['pass']=$row["pass"];
+													 header("Location: userlogged.php");
 												}
 
 									}

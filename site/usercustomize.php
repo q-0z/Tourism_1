@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width">
 
 		<title>Jaust a testing</title>
-		<link rel="stylesheet" href="user.css?<?php echo time(); ?>">
+		<link rel="stylesheet" href="css/user.css?<?php echo time(); ?>">
 	</head>
 	<?php session_start(); ?>
 	<body>
@@ -30,7 +30,7 @@
 								<div class="dropdown-content">
 									<a href="login.php">login</a>
 									<a href="user.php">signup</a>
-
+									<a href="#">menu3</a>
 						</li>
 
 
@@ -40,7 +40,7 @@
 									<a href="plane.php">plane</a>
 
 									<a href="train.php">train</a>
-									
+									<a href="bus.php">bus</a>
 
 						</li>
 
@@ -64,63 +64,56 @@
 		<div class="container">
 				<section class="z">
 
-									   <div class="">
-												 <h1>Booking status</h1>
-													 <div id="php">
-															<?php
-																function login()						/////login function
-																{
-																	$link = mysqli_connect("127.0.0.1", "root", "", "demo");      ///////////demo is database name
-																	if($link === false)
-																	{
-																	die("ERROR: Could not connect. " . mysqli_connect_error());
-																	}
+				   <div class="">
+							 <h1>Booking status</h1>
+								 <div id="php">
+										<?php
+											function login()						/////login function
+											{
+												$link = mysqli_connect("127.0.0.1", "root", "", "demo");      ///////////demo is database name
+												if($link === false)
+													die("ERROR: Could not connect. " . mysqli_connect_error());
+													$sql="SELECT * FROM plane where pl_source='".$_REQUEST['from']."' and pl_dest='".$_REQUEST['to']."'";
+													$result = $link->query($sql);
+													if($result)
+													{
+														if ($result->num_rows > 0)
+														{
+															// output data of each row
+															while($row = $result->fetch_assoc())
+															{
+
+																echo"<form>";
+																	echo "<input type=\"button\"   id=\"ok\"  onClick=\"return Book()\"  value=\"from:". $row["pl_source"]."    To:". $row["pl_dest"]."    Date". $row["date"]."    Fare:". $row["fare"]."    Class:". $row["class"]. "\">";
+																	echo"<br>";
+																echo"</form>";
+
+																 //echo "<sec><div>To: " . $row["pl_to"]."</div> From:  ".$row['pl_from']." Price:  ".$row['pl_price']." user: ".$row['user']." seats: ".$row['seats']." and date:".$row['date']."by:".$row['t_by']."<br></sec>";
+															}
+														}
+														else
+															echo "0 results";
+												}
+												else
+													echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+												$link->close();
+												echo "<script>
+													function Book()
+													{
+														var data=document.getElementById('ok');
+														return window.location.href=\"separation.php?x=\"+data.value;
 
 
-																	$sql="SELECT * FROM reserv Where user='".$_SESSION['name']."'"  ; /////////incomplete-------
+												 }
+													</script>";
 
+											}
 
+											login();
 
-																	$result = $link->query($sql);
-
-																	if($result)
-																	{
-																		if ($result->num_rows > 0)
-																		{
-																			// output data of each row
-																			while($row = $result->fetch_assoc())
-																			{
-																				echo"<div>";
-																					echo "<sec> To:". $row["pl_to"]."</sec>";
-																					echo "<sec> From:". $row["pl_from"]."</sec>";
-																					echo "<sec> Price:". $row["pl_price"]."</sec>";
-																					echo "<sec> Seats:". $row["seats"]."</sec>";
-																					echo "<sec> Date:". $row["date"]."</sec>";
-																					echo "<sec> By:". $row["t_by"]."</sec>";
-																				echo"<div>";
-
-																				 //echo "<sec><div>To: " . $row["pl_to"]."</div> From:  ".$row['pl_from']." Price:  ".$row['pl_price']." user: ".$row['user']." seats: ".$row['seats']." and date:".$row['date']."by:".$row['t_by']."<br></sec>";
-
-																			}
-																		}
-																		else
-																		{
-																			echo "0 results";
-																		}
-																	}
-																	else
-																	{
-																		echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-																		////send eroor message on screen
-																	}
-																	$link->close();
-																}
-
-																login();
-
-															?>
-														</div>
-											</div>
+										?>
+									</div>
+						</div>
 
 				</section>
 		</div>

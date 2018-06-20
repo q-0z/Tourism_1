@@ -28,7 +28,7 @@
 								<div class="dropdown-content">
 									<a href="login.php">login</a>
 									<a href="user.php">signup</a>
-
+									
 						</li>
 
 
@@ -38,7 +38,7 @@
 									<a href="plane.php">plane</a>
 
 									<a href="train.php">train</a>
-								
+									<a href="bus.php">bus</a>
 
 						</li>
 
